@@ -1,0 +1,46 @@
+/* src/components/Grid.css */
+.grid {
+    display: flex;
+    flex-wrap: wrap; /* Ensure rows wrap properly */
+    justify-content: flex-start; /* Adjust alignment if needed */
+    gap: 1px; /* Adjust gap between cells if needed */
+    background-color: #f0f0f0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure each row does not wrap */
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    height: 20px;
+    width: 20px; /* Ensure each cell has fixed dimensions */
+    transition: background-color 0.1s ease-out;
+  }
+  
+  /* Add specific styles for node types (start, finish, wall, etc.) */
+  .node-start {
+    background-color: #4caf50; /* Green */
+  }
+  
+  .node-finish {
+    background-color: #f44336; /* Red */
+  }
+  
+  .node-visited {
+    background-color: #ffcc80; /* Orange */
+  }
+  
+  .node-shortest-path {
+    background-color: #03a9f4; /* Blue */
+  }
+  
+  .wall {
+    background-color: #333; /* Wall color */
+  }
+  
